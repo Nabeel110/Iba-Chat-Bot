@@ -1,0 +1,354 @@
+{
+        "intents": [
+                {
+                        "tag": "greeting",
+                        "patterns": [
+                                "Hi",
+                                "How are you",
+                                "Is anyone there?",
+                                "Hello",
+                                "Good day",
+                                "Whats up",
+                                "Good morning, how are you?",
+                                "Hi there",
+                                "How are you",
+                                "Hey",
+                                "Hola",
+                                "Hello"
+                        ],
+                        "responses": [
+                                "Hello!",
+                                "Good to see you again!",
+                                "Hi there, how can I help?",
+                                "Hello, thanks for asking"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "goodbye",
+                        "patterns": [
+                                "cya",
+                                "See you later",
+                                "I am Leaving",
+                                "Have a Good day",
+                                "Bye",
+                                "Goodbye",
+                                "Nice chatting to you, bye",
+                                "Till next time"
+                        ],
+                        "responses": [
+                                "Sad to see you go :(",
+                                "Talk to you later",
+                                "Goodbye!",
+                                "See you!",
+                                "Have a nice day",
+                                "Bye! Come back again soon."
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "thanks",
+                        "patterns": [
+                                "Thanks",
+                                "Thank you",
+                                "That's helpful",
+                                "Awesome, thanks",
+                                "Thanks for helping me"
+                        ],
+                        "responses": [
+                                "Happy to help!",
+                                "Any time!",
+                                "My pleasure"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "options",
+                        "patterns": [
+                                "How you could help me?",
+                                "What you can do?",
+                                "What help you provide?",
+                                "How you can be helpful?",
+                                "What support is offered?"
+                        ],
+                        "responses": [
+                                "I can guide you through IBA's information, admission policies, and more.",
+                                "Offering support for IBA's information."
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "name",
+                        "patterns": [
+                                "what is your name",
+                                "what should I call you",
+                                "whats your name?"
+                        ],
+                        "responses": [
+                                "You can call me IBot.",
+                                "I'm IBot!"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "about",
+                        "patterns": [
+                                "Tell me something about IBA.",
+                                "What do you know about Institute of Business Administration?",
+                                "Please share some information regarding IBA",
+                                "How is Institute of Business Administration?",
+                                "Some more info. about IBA?"
+                        ],
+                        "responses": [
+                                "IBA is the oldest business school outside North America. It was established in 1955 with initial technical support provided by the world famous Wharton School of Finance, University of Pennsylvania.",
+                                "90% of IBA students have job offers before their convocation.",
+                                "Students of IBA run 27 Societies that organizes learning conferences, competitions and various activities, which makes them independent event organizers and groom their leadership skills.",
+                                "IBA has expanded; it's not just a business school. It now proudly offers a Computer Studies Programme up to PhD level, a Programme in Accounting Economics and Finance / Mathematics, a Programme in Islamic Banking & Finance, and last but not the least a Social Sciences and Liberal Arts Programme.",
+                                "IBA has State of the art physical and technical infrastructure, where thirty five new projects are completed and running."
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "societies",
+                        "patterns": [
+                                "How many societies are there in the institute?",
+                                "What type of societies are at IBA?",
+                                "What about co-curriculur activities at university?"
+                        ],
+                        "responses": [
+                                "Currently, there are 21 student societies and clubs operating within IBA, under the Office of Student Societies. They allow students to explore and pursue their interests outside of the academic sphere leading to a holistic development of character, ethics and morals that IBA promises to instill in its student body. There are many different types of societies including Accounting club, Marketing club, Entrpreneurship society and many more."
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "faculty",
+                        "patterns": [
+                                "How is the faculty?",
+                                "Tell me about the faculty at the university.",
+                                "How are the teachers at IBA?"
+                        ],
+                        "responses": [
+                                "IBA has 80 full time and 85 part time and visiting faculty members teaching courses in Management, Marketing, HR, Strategy, Finance, Economics, Quantitative Methods, Organizational Behavior, Computer Sciences, Ethics, Social Sciences, Chinese, Arabic. These faculties are divided into departments: Dept of Accounting and Law, Dept of Economics & Finance, Dept of Management, Dept of Marketing, Dept of Social Sciences, Dept of Computer Science, and Dept of Mathematical Sciences."
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "programs",
+                        "patterns": [
+                                "What level of programs does the institute offer?",
+                                "What level of programs does this university offer?",
+                                "What type of programs are being offered?"
+                        ],
+                        "responses": [
+                                "IBA offers programmes for all three levels: Undergraduate, Graduate, and Post-Graduate. Which level of programs would you like to know about?"
+                        ],
+                        "context_set": "level"
+                },
+                {
+                        "tag": "undergrad",
+                        "patterns": [
+                                "Tell me about some undergraduate programs",
+                                "What undergraduate programs are on offer?",
+                                "Tell me about some bachelors programs.",
+                                "What bachelors programs are on offer.",
+                                "Undergraduate Programs!",
+                                "Bachelors level.",
+                                "BS level programs."
+
+                        ],
+                        "responses": [
+                                "IBA has 6 undergraduate programs: BBA, BS Computer Science, BS Accounting & Finance, BS Economics & Mathematics, BS Economics, BS Social Sciences."
+                        ],
+                        "context_filter": "level"
+                },
+                {
+                        "tag": "graduate",
+                        "patterns": [
+                                "Tell me about some graduate programs",
+                                "What masters programs are on offer",
+                                "Tell me about some masters programs",
+                                "What graduate programs are on offer",
+                                "Graduate Programs!",
+                                "Masters level.",
+                                "MS level programs."
+
+                        ],
+                        "responses": [
+                                "IBA has 8 graduate programs: MBA, MBA Executive, MS Computer Science, MS Economics, MS Mathematics, MS Islamic Banking & Finance, MS Management, MS Journlism."
+                        ],
+                        "context_filter": "level"
+                },
+                {
+                        "tag": "phd",
+                        "patterns": [
+                                "Tell me about some post graduate programs",
+                                "What post graduate programs are on offer",
+                                "Tell me about some PHD programs",
+                                "What PHD programs are on offer",
+                                "Post-graduate Programs!",
+                                "Phd level programs."
+                        ],
+                        "responses": [
+                                "IBA has 3 post-graduate programs: Phd Computer Science, Phd Economics, Phd Mathematics."
+                        ],
+                        "context_filter": "level"
+                },
+                {
+                        "tag": "requirements",
+                        "patterns": [
+                                "What is the eligibility criteria?",
+                                "What is the requirement to apply?",
+                                "Tell me the application criteria.",
+                                "Am I eligible for applying into IBA?"
+
+                        ],
+                        "responses": [
+                                "For which level of program?"
+                        ],
+                        "context_set": "req"
+                },
+                {
+                        "tag": "ugradreq",
+                        "patterns": [
+                                "eligibility For Undergraduate Programs!",
+                                "requirement For Bachelors level.",
+                                "BS level programs."
+                        ],
+                        "responses": [
+                                "You need 2Bs and 1C in your A'Level or 65% in your Intermediate exams for BBA.\nFor all other BS programs, you need 1B and 2Cs in your A'Level or 60% in your Intermediate exams."
+                        ],
+                        "context_filter": "req"
+                },
+                {
+                        "tag": "gradreq",
+                        "patterns": [
+                                "requirement For graduate Programs!",
+                                "eligibility For Masters level.",
+                                "MS level programs."
+                        ],
+                        "responses": [
+                                "You need minimum of 2.50 CGPA out of 4.00 in your undergraduate program for any MS program or MBA."
+                        ],
+                        "context_filter": "req"
+                },
+                {
+                        "tag": "pgradreq",
+                        "patterns": [
+                                "Frequirement for postgraduate Programs!",
+                                "eligibility For Phd level.",
+                                "Phd level programs."
+                        ],
+                        "responses": [
+                                "You need minimum of 3.00 CGPA out of 4.00 in your graduate program for any Phd program."
+                        ],
+                        "context_filter": "req"
+                },
+                {
+                        "tag": "reqall",
+                        "patterns": [
+                                "eligibility For all Programs!",
+                                "requirement For every level.",
+                                "every level of programs."
+                        ],
+                        "responses": [
+                                "You need 2Bs and 1C in your A'Level or 65% in your Intermediate exams for BBA.\nFor all other BS programs, you need 1B and 2Cs in your A'Level or 60% in your Intermediate exams.\nYou need minimum of 2.50 CGPA out of 4.00 in your undergraduate program for any MS program or MBA.\nYou need minimum of 3.00 CGPA out of 4.00 in your graduate program for any Phd program."
+                        ],
+                        "context_filter": "req"
+                },
+                {
+                        "tag": "fee",
+                        "patterns": [
+                                "What is the fee?",
+                                "What is the total fee per semester?",
+                                "Tell me about fees.",
+                                "Is IBA affordable?",
+                                "Can I afford this university?"
+
+                        ],
+                        "responses": [
+                                "For which level of program?"
+                        ],
+                        "context_set": "fee"
+                },
+                {
+                        "tag": "ugradfee",
+                        "patterns": [
+                                "fee For Undergraduate Programs!",
+                                "fee For Bachelors level.",
+                                "fee for BS level programs."
+                        ],
+                        "responses": [
+                                "Currently, IBA charges Rs. 237,500/- per semester for BBA and BS ACF. While, for all other BS programs, the fee per semester is Rs. 199,500/-."
+                        ],
+                        "context_filter": "fee"
+                },
+                {
+                        "tag": "gradfee",
+                        "patterns": [
+                                "fee For graduate Programs!",
+                                "per semester fee For Masters level.",
+                                "fee for MS level programs."
+                        ],
+                        "responses": [
+                                "For MBA (Morning), IBA charges Rs. 237,500/- per semester. For all other MS programs, the fee per semester is Rs. 122,500/-."
+                        ],
+                        "context_filter": "fee"
+                },
+                {
+                        "tag": "pgradfee",
+                        "patterns": [
+                                "fee For postgraduate Programs!",
+                                "fee For Phd level.",
+                                "fee for Phd level programs."
+                        ],
+                        "responses": [
+                                "A full tuition fee waiver and monthly stipend."
+                        ],
+                        "context_filter": "fee"
+                },
+                {
+                        "tag": "feeall",
+                        "patterns": [
+                                "fee For all Programs!",
+                                "fee For every level.",
+                                "fee for every level of programs."
+                        ],
+                        "responses": [
+                                "Currently, IBA charges Rs. 237,500/- per semester for BBA and BS ACF. While, for all other BS programs, the fee per semester is Rs. 199,500/-.\nFor MBA (Morning), IBA charges Rs. 237,500/- per semester. For all other MS programs, the fee per semester is Rs. 122,500/-.\nA full tuition fee waiver and monthly stipend for all Phd programs.\nVisit https://admissions.iba.edu.pk/OfferedPrograms.php for more information."
+                        ],
+                        "context_filter": "fee"
+                },
+                {
+                        "tag": "fin_aid",
+                        "patterns": [
+                                "Financial Aid?",
+                                "Does IBA offer any scholarship?",
+                                "Does IBA provide financial assistance?",
+                                "Does IBA provide financial aid?",
+                                "Is there any waiver for BS and MS programs in fee in the university?"
+                        ],
+                        "responses": [
+                                "Yes, you can get a big support in terms of Financial aid. IBA offers a few Financial Assistance Packages: Instalment Plan; Deferment of Fees; Need based Financial Assistance / Scholarships; Study loans; Work-study Appointment Scheme"
+                        ],
+                        "context_set": ""
+                },
+                {
+                        "tag": "news",
+                        "patterns": [
+                                "News",
+                                "Updates",
+                                "Recent news about IBA",
+                                "Latest news on IBA web",
+                                "Fresh news about IBA",
+                                "Latest updates",
+                                "Latest updates about IBA"
+                        ],
+                        "responses": [
+                                "Wait while we are fetching recent updates from IBA...",
+                                "Please wait a moment"
+                        ],
+                        "context_set": ""
+                }
+               
+        ]
+}
